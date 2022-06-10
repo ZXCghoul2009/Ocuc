@@ -6,6 +6,6 @@ mkdir DIR
 touch DIR/Myfile.txt
 echo "File created"
 # Запись фамилии и даты в файл(date +%r обозначает запись только времени)
-echo "Luchitz" > DIR/Myfile.txt
+echo "Luchits" > DIR/Myfile.txt
 date +%r >> DIR/Myfile.txt
 echo "Complete!"
