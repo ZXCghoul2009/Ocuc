@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Ninth task"
+  
+ echo "enter the maximum number:"
+ read s
+ 
+  for n in $(seq 1 $s)  # generate 1,2,3 .. s
+do 
+ SQ=$(($n * $n)) 
+ echo "SQ $SQ" 
+done 

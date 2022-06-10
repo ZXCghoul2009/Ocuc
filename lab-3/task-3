@@ -1,0 +1,25 @@
+#!/bin/bash
+
+mkdir root
+mkdir root/dir1
+mkdir root/dir2
+
+mkdir root/dir1/dir3
+
+
+touch root/dir1/hardlink.txt
+touch root/dir2/file3.txt
+touch root/dir2/file4.txt
+
+touch root/dir1/dir3/softlink.txt
+
+cd root
+
+ln -s dir1/dir3/softlink.txt file1.txt
+
+cd ..
+
+sudo ln root/dir1/hardlink.txt /home/nikita/Linux/lab-2/root/
+
+sudo ln root/dir1/hardlink.txt /home/nikita/Linux/lab-2/root/dir2/
+

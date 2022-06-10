@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "chmod permissions filename"
+
+echo "setting permissions to the other users"
+chmod o=rwx root/hardlink.txt
+ls -l root/hardlink.txt
+
+chmod o=rwx root/dir2/file4.txt
+ls -l root/dir2/file4.txt
+
+chmod o=rwx root/dir2/file3.txt
+ls -l root/dir2/file3.txt
+
+echo "adding execute permisiion to the usergroup"
+chmod g+x root/hardlink.txt
+ls -l root/hardlink.txt
+
+chmod g+x root/dir2/file4.txt
+ls -l root/dir2/file4.txt
+
+chmod g+x root/dir2/file3.txt
+ls -l root/dir2/file3.txt

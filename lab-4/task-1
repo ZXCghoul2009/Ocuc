@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#PID - это уникальный идентификатор процесса,
+#TTY - тип терминала, 
+#TIME - это общее время использования процессорного времени процессом (00:00:00 напротив процесса bash указывает, что процессорное время вообще не было использовано до сих пор), 
+#CMD - это имя команды, которая запустила этот процесс.
+ 
+echo "listing running processes"
+
+ps
+
+echo "display information about processes running on behalf of all users, not just the current one"
+
+ps -a

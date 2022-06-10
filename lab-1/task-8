@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat info.dat cal.dat > file

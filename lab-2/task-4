@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Fourth task"
+
+# Чтение значений аргументов по отдельности
+echo "The value of the first argument: $1"
+echo "The value of the second argument: $2"
+echo "The value of the third argument: $3"
+
+avr=$((($1+$2+$3)/3)) 
+echo -e "\nAverage = $avr"
+

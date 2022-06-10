@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cal -m july > cal.dat && echo "Aleska Piskov" >> cal.dat && date >> cal.dat

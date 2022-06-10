@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd root/
+
+ls -l
+
+echo "access rights" "user" "date" "time" "directory"

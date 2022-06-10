@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "View File Attributes"
+
+ls -l root/

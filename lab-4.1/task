@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#в начале установим инструменты сборки, куда входят необходимые компиляторы gcc для языка C и g++ для языка C++
+
+sudo apt install build-essential
+
+gcc -Wall -o main main.c
+
+echo "program compiled!"
+
+./main
+
+echo "Complete"
+
