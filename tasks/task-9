@@ -1,0 +1,13 @@
+#!/bin/bash
+
+touch script
+echo "#!/bin/bash" > script
+chmod +x script
+./script
+
+if [ $? -eq 0 ]
+then
+  echo "Successfully launch script"
+else
+  echo "Could not launch script" >&2
+fi

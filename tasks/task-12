@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read a
+let a=$a%2
+if (($a == 0))
+then  
+echo "Четное"
+else
+echo "Нечетное"
+fi
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+year="$1"
+	if [ "$((year % 4))" -eq 0 -a "$((year % 100))" -ne 0 ];then
+	    echo -e "****** $year - это високосный год!"
+	elif [ "$((year % 400))" -eq 0 ];then
+	    echo -e "****** $year - это високосный год!"
+	else
+	    echo -e "****** $year - нормальный год!"
+	fi

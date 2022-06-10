@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pgrep -u nikita chrome
+
+pkill chrome

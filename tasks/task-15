@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ echo "Seventh task"
+ 
+ echo "first side"
+ read n
+ echo "second side"
+ read m
+ echo "third side"
+ read t
+ 
+ if (($n == $m && $m == $t && $n==$t))
+ then 
+ echo "equilateral" 
+ elif (($n==$m || $m==$t || $n==$t))
+ then
+ echo "isosceles"
+ else 
+ echo "versatile"
+ fi

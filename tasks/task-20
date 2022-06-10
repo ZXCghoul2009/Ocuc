@@ -1,0 +1,24 @@
+#!/bin/bash
+
+ 
+echo "number of files and directories in the current location---->1"
+echo "output 10 consecutive lines in a file---->2"
+echo "list all user processes---->3"
+
+echo "select one of the options"
+read n
+
+if [[ $n -eq 1 ]] 
+then
+ls -l | wc
+
+elif [[ $n -eq 2 ]]
+then
+head -10 perm | tail -5
+
+else
+ps U yourname
+exit 1;
+fi
+
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "input points(x,y):"
+
+read x
+read y
+
+let "x=$x**2"
+let "y=$y**2"
+
+
+echo "(" $x ";" $y ")"

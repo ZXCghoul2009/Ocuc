@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "enter a number in binary"
+
+read t
+
+echo "number in decimal:"$((2#$t))

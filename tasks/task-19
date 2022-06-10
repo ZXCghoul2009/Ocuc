@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read char
+
+case $char in
+    ''|*[!0-9]*) echo "letter" ;;
+    *) echo "number" ;;
+esac

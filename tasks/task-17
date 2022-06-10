@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+echo "first number:"
+read a
+
+echo "second number"
+read b
+
+echo "+ or -"
+read c
+
+case $c in 
+
+"+")
+res=$(($a+$b))
+echo "$res";;
+
+
+"-")
+res=$(($a-$b))
+echo $res
+esac	

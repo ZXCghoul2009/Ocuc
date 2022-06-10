@@ -1,0 +1,25 @@
+#!/bin/bash
+
+factorial()
+{
+if [ $1 -eq 1 ]
+then
+echo 1
+else
+echo $(( $(factorial $(($1 - 1)))*$1))
+fi
+}
+
+read -p "Введите число: "
+
+e=1
+
+for ((i=1; i <= $REPLY; ++i))
+do
+res=$(bc «< "scale=5; 1 / $(factorial $i)")
+e=$(bc «< "scale=5;$e + $res")
+done
+
+echo "Число e: $e"
+
+exit 0

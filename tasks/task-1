@@ -1,0 +1,7 @@
+#!/bin/bash
+
+host google.com > inf.txt
+
+grep -w "IPv6" inf.txt
+
+ifconfig

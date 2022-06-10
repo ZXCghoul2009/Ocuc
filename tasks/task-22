@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Enter a number"
+read num
+
+sum=0
+
+while [ $num -gt 0 ]
+do
+    #разделим каждую цифру
+    mod=$((num % 10))    
+    #Добавим каждую цифру к сумме
+    sum=$((sum + mod)) 
+    #разделим число на 10.  
+    num=$((num / 10))  
+done
+
+echo "The sum of the digits in a number:"$sum

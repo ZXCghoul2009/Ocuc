@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read -p 'Enter number of rows: ' row
+k=$row
+for ((i=0;i<row;i++)); do
+  c=1
+  printf -v spaces '%*.s' $k ''
+  k=$((k-1))
+  l=$c
+  for ((j=0;j<i;j++)); do
+    c=$((c*(i-j)/(j+1)))
+    l="${l} ${c}"
+  done
+  echo "${spaces}${l}"
+done

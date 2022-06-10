@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Чтение значений аргументов по отдельности
+echo "Значение первого аргумента: $1"
+echo "Значение второго аргумента: $2"
+echo "Значение третьего аргумента: $3"
+
+if test "$#" -ne 3; then
+    echo "Illegal number of parameters"
+    exit
+else
+
+# Добавление значений аргументов
+sum=$(($1+$2+$3))
+
+# Вывод результата
+let "res = $sum / $#"
+
+echo -e "\nAverage of three numbers = $res"
+fi

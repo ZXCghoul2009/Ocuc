@@ -1,0 +1,16 @@
+#!/bin/bash
+
+function recursionSum
+{
+    if [ $1 -eq 0 ]
+    then
+       echo 0
+    else
+       echo $(( $1 % 10 + $(recursionSum $(( $1 / 10 ))) ))
+    fi
+}
+ 
+read -p "Введите число: " number
+sum_recursion=$(recursionSum $number)
+echo "Сумма цифр введенного числа вычислена рекурсивно и составляет $sum_recursion"
+exit 0

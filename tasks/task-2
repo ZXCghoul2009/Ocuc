@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "write month"
+read t
+
+cal -m $t> date.txt
+
+
+grep "June" date.txt
